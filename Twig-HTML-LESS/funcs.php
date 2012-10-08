@@ -26,7 +26,7 @@
 	function redirect($name, $error)
 	{
 		if(isset($error))
-			header("Location: " . $name . ".php?error=" . error);
+			header("Location: " . $name . ".php?error=" . $error);
 		else
 			header("Location: " . $name . ".php");
 	}
