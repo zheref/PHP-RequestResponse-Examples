@@ -9,6 +9,7 @@
 	<?php renderinc("head"); ?>
 	<body>
 		<div class="outer-wrapper">
+			<?php echo basepath(); ?>
 			<?php render("header"); ?>
 			<?php render("home"); ?>
 		</div> <!--End of outer-wrapper which opens in header.php -->

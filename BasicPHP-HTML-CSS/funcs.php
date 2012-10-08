@@ -19,16 +19,16 @@
 	// Renderiza el HTML del archivo con el nombre $name especificado
 	function render($name)
 	{
-		include($name . ".php");
+		include("/" . $name . ".php");
 	}
 
 	// Redirecciona al archivo con el nombre $name especificado y con los parametros de error $error
 	function redirect($name, $error)
 	{
 		if(isset($error))
-			header("Location: " . $name . ".php?error=" . $error);
+			header("Location: " . basepath() . "/" . $name . ".php?error=" . $error);
 		else
-			header("Location: " . $name . ".php");
+			header("Location: " . basepath() . "/" . $name . ".php");
 	}
 
 	// Determina si en este momento existe un usuario autentificado en la sesion o no
@@ -38,5 +38,11 @@
 			return true;
 		else 
 			return false;
+	}
+
+	function basepath()
+	{
+		//return "/PHP-RequestResponse-Examples/BasicPHP-HTML-CSS"; // Apache HTTP Server
+		return ""; // Microsoft WebMatrix
 	}
 ?>

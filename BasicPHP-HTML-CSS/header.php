@@ -2,7 +2,7 @@
     <div class="content-wrapper">
         <div class="float-left">
             <p class="site-title">
-                <a href="/index.php">
+                <a href="<?php echo basepath(); ?>/index.php">
                     Ejemplo basico de Request y Response en PHP + HTML + CSS
                 </a>
             </p>
@@ -13,11 +13,11 @@
                     <?php
                     if ( islogged() )
                     {
-                        echo '<li><a href="/logoff.php">Cerrar Sesion</a></li>' . "\n";
+                        echo '<li><a href="<?php echo basepath(); ?>/logoff.php">Cerrar Sesion</a></li>' . "\n";
                     }
                     else
                     {
-                        echo '<li><a href="/logon.php">Iniciar Sesion</a></li>' . "\n";
+                        echo '<li><a href="<?php echo basepath(); ?>/logon.php">Iniciar Sesion</a></li>' . "\n";
                     }
                     ?>
                 </ul>

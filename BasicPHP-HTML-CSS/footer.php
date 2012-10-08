@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-wrapper">
         <div class="float-left">
-            <p>&copy; My Site</p>
+            <p>PHP Template Engine + PHP + HTML + CSS Elemental Example. Zheref (R) - Libre Distribucion</p>
         </div>
         <div class="float-right">
             <ul id="social">

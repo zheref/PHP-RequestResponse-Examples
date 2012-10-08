@@ -3,7 +3,7 @@
 	<ol class="round">
 		<li class="one">
 			<h5>Autentificacion</h5>
-			Por favor, <a href="/logon.php">autentiquese</a> con el nombre de usuario "<strong>zheref</strong>" y la contraseña "<strong>Altairis</strong>".
+			Por favor, <a href="<?php echo basepath(); ?>/logon.php">autentiquese</a> con el nombre de usuario "<strong>zheref</strong>" y la contraseña "<strong>Altairis</strong>".
 		</li>
 		<li class="two">
 			<h5>Aprenda mas HTML</h5>
